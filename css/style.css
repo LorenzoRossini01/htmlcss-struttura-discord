@@ -87,7 +87,8 @@ a:hover {
 }
 
 .intro-content {
-  flex: 0 1 100%;
+  flex: 0 1 80%;
+  margin: 0 auto;
 
   /* debug */
   background-color: #ee82ee;
