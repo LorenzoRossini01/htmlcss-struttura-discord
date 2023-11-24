@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 /* UTILS */
@@ -10,8 +12,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+  min-height: 100px;
+}
+
+.footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #7fffd4;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 10px auto 50px;
   min-height: 100px;
 }
 
@@ -100,7 +121,6 @@ a:hover {
 
 .column-row:nth-of-type(even) {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -112,7 +132,6 @@ a:hover {
 
 .column-row:nth-of-type(odd) {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
@@ -143,9 +162,10 @@ a:hover {
 /* BIG SECTION */
 .big-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
 
   /* debug */
   background-color: #d3d3d3;
@@ -158,5 +178,66 @@ a:hover {
   /* debug */
   background-color: #228b22;
   border: 3px dashed black;
-  min-height: 800px;
+  min-height: 1000px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #23272a;
+}
+
+/* FOOTER TOP */
+.footer-top {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  /* debug */
+  min-height: 600px;
+}
+
+.footer-top-left {
+  flex: 1 1 30%;
+
+  /* debug */
+  background-color: #f08080;
+  border: 3px dashed black;
+}
+
+.footer-top-right {
+  display: flex;
+  flex: 1 1 70%;
+
+  /* debug */
+  background-color: #20b2aa;
+  border: 3px dashed black;
+}
+
+.footer-column {
+  flex: 1 1 25%;
+
+  /* debug */
+  background-color: #20b2aa;
+  border: 3px dashed white;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  border-top: 2px solid white;
+}
+
+.footer-logo,
+.footer-button {
+  padding: 0.5rem 1.5rem;
+
+  /* debug */
+  background-color: #ffb6c1;
+  border: 3px dashed black;
+  text-decoration: none;
 }
