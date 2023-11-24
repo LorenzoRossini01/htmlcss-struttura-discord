@@ -128,24 +128,75 @@ a:hover {
 /* INTRO */
 .intro {
   display: flex;
-
   justify-content: center;
   align-items: center;
+  background-image: url(../img/jumbo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /* debug */
-  background-color: #00008b;
+  /* background-color: #00008b;
   border: var(--border);
-  min-height: 450px;
+  min-height: 450px; */
 }
 
 .intro-content {
   flex: 0 1 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 150px 0 200px;
 
   /* debug */
-  background-color: #ee82ee;
+  /* background-color: #ee82ee;
   border: var(--border);
-  min-height: 350px;
+  min-height: 350px; */
+}
+
+.intro-title {
+  font-size: 3rem;
+  color: var(--border-color2);
+}
+
+.intro-text {
+  text-align: center;
+  width: 80%;
+  color: var(--border-color2);
+}
+
+.intro-button {
+  display: flex;
+  gap: 30px;
+  font-size: 1rem;
+}
+
+.download-button {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  width: auto;
+  height: 50px;
+  padding: 0 15px;
+  color: #000;
+  line-height: 50px;
+}
+
+.download-button:before {
+  content: "\2B07";
+  font-weight: bolder;
+  padding-right: 0.5rem;
+}
+
+.open-button {
+  background-color: black;
+  border-radius: 1.5rem;
+  width: auto;
+  height: 50px;
+  padding: 0 15px;
+  color: white;
+  line-height: 50px;
 }
 
 /* SECTION COLUMNS */
