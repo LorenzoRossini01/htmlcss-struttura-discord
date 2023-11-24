@@ -43,7 +43,6 @@ header {
   /* debug */
   background-color: goldenrod;
   border: 3px dashed black;
-
   min-height: 50px;
 }
 
@@ -56,7 +55,6 @@ header {
   /* debug */
   background-color: goldenrod;
   border: 3px dashed black;
-
   min-height: 50px;
 }
 
@@ -73,4 +71,26 @@ a {
 
 a:hover {
   color: red;
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  /* debug */
+  background-color: #00008b;
+  border: 3px dashed black;
+  min-height: 450px;
+}
+
+.intro-content {
+  flex: 0 1 100%;
+
+  /* debug */
+  background-color: #ee82ee;
+  border: 3px dashed black;
+  min-height: 350px;
 }
