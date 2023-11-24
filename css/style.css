@@ -95,3 +95,47 @@ a:hover {
   border: 3px dashed black;
   min-height: 350px;
 }
+
+/* SECTION COLUMNS */
+
+.column-row:nth-of-type(n) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  /* debug */
+  background-color: white;
+  min-height: 550px;
+}
+
+.column-row:nth-of-type(2n) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  /* debug */
+  background-color: #d3d3d3;
+  min-height: 550px;
+}
+
+.img-column {
+  flex: 1 1 60%;
+
+  /* debug */
+  background-color: #1e90ff;
+  border: 3px dashed black;
+  min-height: 400px;
+}
+
+.text-column {
+  flex: 1 1 40%;
+
+  /* debug */
+  background-color: #ffc0cb;
+  border: 3px dashed black;
+  min-height: 400px;
+}
