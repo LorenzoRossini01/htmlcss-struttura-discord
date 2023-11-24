@@ -205,9 +205,9 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 
   /* debug */
-  background-color: white;
   min-height: 550px;
 }
 
@@ -215,28 +215,46 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
 
   /* debug */
-  background-color: #d3d3d3;
-  min-height: 550px;
+  /* min-height: 550px; */
 }
 
 .img-column {
   flex: 0 1 60%;
+  display: flex;
+  align-items: flex-start;
 
   /* debug */
-  background-color: #1e90ff;
+  /* background-color: #1e90ff;
   border: var(--border);
-  min-height: 400px;
+  min-height: 400px; */
 }
 
 .text-column {
   flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 
   /* debug */
-  background-color: #ffc0cb;
+  /* background-color: #ffc0cb;
   border: var(--border);
-  min-height: 400px;
+  min-height: 400px; */
+}
+
+.column-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  width: 300px;
+}
+
+.column-text {
+  font-size: 1.1rem;
+  width: 320px;
 }
 
 /* BIG SECTION */
