@@ -123,7 +123,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: row-reverse;
 
   /* debug */
   background-color: white;
@@ -134,7 +134,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
 
   /* debug */
   background-color: #d3d3d3;
