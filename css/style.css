@@ -47,7 +47,7 @@
   margin: 0 auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background-color: #7fffd4;
+  /* background-color: #7fffd4; */
 }
 
 .footer-container {
@@ -264,19 +264,68 @@ a:hover {
   align-items: center;
   padding-top: 75px;
   padding-bottom: 75px;
+  background-image: url("../img/stars.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 875px;
+  background-color: rgba(0, 0, 0, 0.1);
 
   /* debug */
-  background-color: #d3d3d3;
   min-height: 900px;
 }
 
 .big-section-textbox {
-  flex: 1 1 100%;
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
 
   /* debug */
-  background-color: #228b22;
+  /* background-color: #228b22;
   border: var(--border);
-  min-height: 1000px;
+  min-height: 1000px; */
+}
+
+.big-section-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.big-section h2 {
+  font-size: 3rem;
+  margin-top: 50px;
+}
+
+.big-section p {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+.big-section h3 {
+  font-size: 2rem;
+}
+
+.big-section-download {
+  background-color: #8ea1e1;
+  border-radius: 1.5rem;
+  width: 175px;
+  height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.big-section-download:before {
+  content: "\2B07";
+  font-weight: bolder;
+  padding-right: 0.5rem;
 }
 
 /* FOOTER */
@@ -328,6 +377,7 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 20px;
+  padding-bottom: 100px;
   border-top: 2px solid;
   border-color: var(--border-color2);
 }
@@ -337,7 +387,22 @@ footer {
   padding: 0.5rem 1.5rem;
 
   /* debug */
-  background-color: #ffb6c1;
-  border: var(--border);
+  /* background-color: #ffb6c1; */
+  /* border: var(--border); */
   text-decoration: none;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-button {
+  background-color: #8ea1e1;
+  border-radius: 1.5rem;
+  width: 175px;
+  height: 50px;
+  padding: 0 15px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
 }
