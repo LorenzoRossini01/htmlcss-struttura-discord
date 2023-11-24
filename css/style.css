@@ -98,7 +98,7 @@ a:hover {
 
 /* SECTION COLUMNS */
 
-.column-row:nth-of-type(n) {
+.column-row:nth-of-type(even) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -110,7 +110,7 @@ a:hover {
   min-height: 550px;
 }
 
-.column-row:nth-of-type(2n) {
+.column-row:nth-of-type(odd) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -138,4 +138,25 @@ a:hover {
   background-color: #ffc0cb;
   border: 3px dashed black;
   min-height: 400px;
+}
+
+/* BIG SECTION */
+.big-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  /* debug */
+  background-color: #d3d3d3;
+  min-height: 900px;
+}
+
+.big-section-textbox {
+  flex: 1 1 100%;
+
+  /* debug */
+  background-color: #228b22;
+  border: 3px dashed black;
+  min-height: 800px;
 }
